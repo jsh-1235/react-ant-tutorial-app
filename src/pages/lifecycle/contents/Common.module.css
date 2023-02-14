@@ -1,0 +1,12 @@
+.number, .date {
+  margin: 10px;
+  font-size: 2rem;
+}
+
+.number {
+  color: cornflowerblue;
+}
+
+.date {
+  color: tomato;
+}

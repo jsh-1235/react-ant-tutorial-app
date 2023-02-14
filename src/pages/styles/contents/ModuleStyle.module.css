@@ -1,0 +1,27 @@
+.padding {
+  padding: 10px;
+}
+
+.small {
+  height: 100px;
+}
+
+.middle {
+  height: 200px;
+}
+
+.large {
+  height: 300px;
+}
+
+.color {
+  color: blue;
+}
+
+/* 클래스 이름을 고유화 하지 않고 전역적 클래스 이름을 사용한다. */
+:global .something {
+  font-size: 2rem;
+  text-align: center;
+  color: aqua;
+  text-transform: uppercase;
+}

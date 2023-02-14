@@ -1,0 +1,89 @@
+@import './utils.scss';
+
+$button-font-size : 2rem;
+$button-height : 64px;
+$button-border-radius : 4px;
+
+.button {
+  min-width: $button-font-size * 6;
+  height: $button-height;
+  border: none;
+  border-radius: $button-border-radius;
+  background-color: #85bb5c;
+  color: white;
+  font-size: var(--component-font-size);
+  text-transform: uppercase;
+  margin: 10px;
+
+  &:hover {
+    background-color: #558b2f;
+    cursor: pointer;
+    transition-property: background-color, cursor;
+    transition-duration: 0.5s;
+  }
+
+  &:active {
+    background-color: #255d00;
+    transition-property: background-color, cursor;
+    transition-duration: 0.5s;
+  }
+
+  &:disabled {
+    background-color: #424242;
+    color: #6d6d6d;
+  }
+}
+
+.box_container {
+  display: flex;
+
+  .box {
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+
+    &.red {
+      background-color: $red;
+      @include square(1);
+    }
+
+    &.orange {
+      background: $orange;
+      @include square(2);
+    }
+
+    &.yellow {
+      background: $yellow;
+      @include square(3);
+    }
+
+    &.green {
+      background: $green;
+      @include square(4);
+    }
+
+    &.blue {
+      background: $blue;
+      @include square(5);
+    }
+
+    &.indigo {
+      background: $indigo;
+      @include square(6);
+    }
+
+    &.violet {
+      background: $violet;
+      @include square(7);
+    }
+
+    &:hover {
+      // background-color: black;
+      background-color: lighten($blue, 10%);
+    }
+
+    &:active {
+      // background-color: white;
+       background: darken($blue, 10%);
+    }
+  }
+}

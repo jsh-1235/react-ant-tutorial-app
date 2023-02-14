@@ -1,0 +1,16 @@
+.label {
+  margin: 10px;
+}
+
+.space {
+  height: 1px;
+  background-color: white;
+  opacity: 0.5;
+  margin: 20px 0px;
+}
+
+.result {
+  font-size: 2rem;
+  text-align: center;
+  margin: 10px;
+}
